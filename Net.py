@@ -237,7 +237,7 @@ class LocalDisNet(object):
 
         if resize:
             for i in range(len(segs)):
-                segs[i] = cv2.resize(segs[i], (imgs[i].shape[0], imgs[i].shape[1]), interpolation=cv2.INTER_NEAREST)
+                segs[i] = cv2.resize(segs[i], (imgs[i].shape[1], imgs[i].shape[0]), interpolation=cv2.INTER_NEAREST)
 
         return segs
 
